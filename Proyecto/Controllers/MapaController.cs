@@ -46,7 +46,7 @@ namespace Proyecto.Controllers
 
         public ActionResult CalcularDistancias(Persona persona)
         {
-            return Json(new { datos = "Falta lo mas Yuca" }, JsonRequestBehavior.AllowGet);
+            return Json(new { datos = "Falta lo mas Yuca tenes Tiempo para hacerlo" }, JsonRequestBehavior.AllowGet);
         }
 
     }

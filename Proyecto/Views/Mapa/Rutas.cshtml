@@ -1,0 +1,368 @@
+﻿
+<div class="container">
+
+    <br />
+
+    <h1>Grafos - Estructura de Datos I</h1>
+
+    <br />
+
+    <div id="map" style="width:100%;height:700px;"></div>
+
+    <br />
+
+    <div id="table">
+
+        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Ciudad Origen</th>
+                    <th>Ciudad Destino</th>
+                    <th>Distancia</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog" style="height:650px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Agregar Ciudad</h4>
+            </div>
+            <div class="modal-body">
+                <form id="model">
+                    <div class="form-group">
+                        <label>Distancia</label>
+                        <input type="text" class="form-control" id="valor" name="valor" placeholder="Ingrese la Distancia" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ingrese Nombre de la Ciudad</label>
+                        <input type="text" class="form-control" id="nombreCiudad" name="nombreCiudad" placeholder="Ingrese Nombre Ciudad">
+                    </div>
+                    <div class="form-group">
+                        <label>Ciudad de Referencia: </label>
+                        <select class="form-control" id="referencia" name="referencia"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Latitud</label>
+                        <input type="text" class="form-control" id="lat" name="lat" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Longuitud</label>
+                        <input type="text" class="form-control" id="long" name="lng" readonly>
+                    </div>
+                </form>
+            </div>
+            <div id="footerModel" class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal3" role="dialog" style="height:650px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Punto de Partida - Datos</h4>
+            </div>
+            <div class="modal-body">
+                <form id="model-datos-Persona">
+                    <div class="form-group">
+                        <label>Posicion</label>
+                        <input type="text" class="form-control" id="idPosicionPartida" name="idPosicionPartida" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" id="nombrePersona" name="nombrePersona" placeholder="Ingrese Su Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Marca de su Vehiculo</label>
+                        <input type="text" class="form-control" id="marcaVehiculo" name="marcaVehiculo" placeholder="Ingrese Marca de su Vehiculo">
+                    </div>
+                    <div class="form-group">
+                        <label>Precio de Combustible</label>
+                        <input type="text" class="form-control" id="precioCombustible" name="precioCombustible" placeholder="Ingrese Precio del Combustible por Galon">
+                    </div>
+                    <div class="form-group">
+                        <label>Kilometraje por Galon</label>
+                        <input type="text" class="form-control" id="kilometroGalon" name="kilometroGalon" placeholder="Rendimiento de Kilometros por Galon">
+                    </div>
+                    <div class="form-group">
+                        <label>Presupuesto para su Vieje</label>
+                        <input type="text" class="form-control" id="Presupuesto" name="Presupuesto" placeholder="Ingrese el Presupuesto para su Viaje">
+                    </div>
+                </form>
+            </div>
+            <div id="footerModel-data" class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+
+<script type="text/javascript">
+    var map = null;
+
+    var lista = null;
+
+    function myMap() {
+        var uluru = new google.maps.LatLng(14.812922, -86.371867);
+        var mapOptions = {
+            zoom: 8,
+            center: uluru
+        }
+
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+        map.addListener('click', function (e) {
+            var lat = e.latLng.lat();
+            var lng = e.latLng.lng();
+            MostrarModal(lat, lng);
+        });
+
+    }
+
+    function MostrarModal(latitud, longuitud) {
+
+
+        $('#referencia').empty();
+
+        $('#referencia').append($(
+            '<option value="-1" readonly>Seleccione una Opcion</option>'
+        ));
+
+        if (lista == null) {
+            $('#valor').val("0");
+            $('#valor').prop('readonly', true);
+        } else {
+            $('#valor').val("");
+            $('#valor').prop('readonly', false);
+
+            $.each(lista, function (i, item) {
+                $('#referencia').append($(
+                    '<option value="' + item.id + '" readonly>' + item.nombreCiudad + '</option>'
+                ));
+            })
+
+        }
+
+
+        $('#lat').val(latitud);
+        $('#long').val(longuitud);
+
+        $('#footerModel').empty();
+
+        $('#nombreCiudad').val("");
+
+
+
+        $('#footerModel').append($(
+            "<button type='button' class='btn btn-primary' onclick='AgregarMarcador(" + '"' + latitud + '",' + '"' + longuitud + '"' + ")'>Agregar Marcador</button>"
+
+        ))
+
+        $('#myModal2').modal({ keyboard: false });
+        $('#myModal2').modal('show')
+    }
+
+    function AgregarMarcador(lat, long) {
+        var id = 0;
+
+        var ciudad = $('#nombreCiudad').val();
+
+        var valor = $('#valor').val();
+
+
+        console.log(ciudad);
+
+        var referencia = $('#referencia option:selected').val();
+
+        console.log(referencia);
+
+        if (lista == null) {
+            referencia = 1;
+        }
+
+
+        if (ciudad != "" && valor != "" && referencia != -1) {
+
+                $('#myModal2').modal('toggle')
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(lat, long),
+                    map: map,
+                    title: ciudad
+                });
+
+
+                if (lista == null) {
+                    i = 1;
+                } else {
+                    i = ( lista.length + 1 );
+                }
+
+                console.log(i);
+
+                var infowindow = new google.maps.InfoWindow({
+
+                    content:
+                    "<div id='infoDiv' class='infoDiv'>" +
+                        "<h2 id='nombre'><b>" + ciudad + "</b></h2>" +
+                        "<button class='btn btn-success' onclick='Iniciar("+ i +")' >Iniciar desde Aqui</button>"+
+                    "</div>"
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+
+
+                $.ajax({
+                    url: "@Url.Action("insertNodo", "Mapa")",
+                    type: "POST",
+                    data: $('#model').serialize(),
+                    success: function (data) {
+
+                        lista = data;
+                        listaAgregarCoordenadas();
+
+                    }
+                })
+        } else {
+            alert("Campos Requeridos");
+        }
+    }
+
+
+    function listaAgregarCoordenadas() {
+        $.ajax({
+            url: "@Url.Action("lstCoordenadas", "Mapa")",
+            type: "POST",
+            data: $('#model').serialize(),
+            success: function (data) {
+                var Coordenadas = [];
+                $.each(data.coordenadas, function (i, item) { // se hace el foreach desde ajax
+                    Coordenadas.push({
+                        lat: parseFloat(item.lat),
+                        lng: parseFloat(item.lng)
+                    });
+                });
+
+
+
+                agregarEnlacesMarker(Coordenadas);
+                Tabla(data.ciudades);
+            }
+        })
+    }
+
+
+    function agregarEnlacesMarker(Coordenadas) {
+        var flightPath = new google.maps.Polyline({ //metodo que hace las lineas
+            path: Coordenadas,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2,
+            clickable: true
+        });
+
+        flightPath.setMap(map);
+
+
+    }
+
+
+    function Tabla(Lista) {
+        console.log(Lista);
+
+        if (Lista.length != 0) {
+            
+            $('#example').DataTable({
+                responsive: true,
+                data: Lista,
+                "bDestroy": true,
+                columns: [
+                    { data: 'CiudadOrigen' },
+                    { data: 'CiudadDestino' },
+                    { data: 'Distancia' }
+                ]
+            });
+        }
+
+    }
+
+    function Iniciar(id) {
+
+        $('#idPosicionPartida').val("");
+        $('#idPosicionPartida').val(id);
+
+        $('#myModal3').modal({ keyboard: false });
+        $('#myModal3').modal('show');
+
+        $('#footerModel-data').empty();
+        $('#footerModel-data').append($(
+            "<button type='button' onclick='Calcular()' class='btn btn-primary'>Calcular Distancia</button>"
+        ))
+
+
+
+    }
+
+
+    function Calcular() {
+        var nombre = $('#nombrePersona').val();
+        var marca = $('#marcaVehiculo').val();
+        var precio = $('#precioCombustible').val();
+        var kilometro = $('#kilometroGalon').val();
+
+
+        if (nombre != "" && marca != "" && precio != "" && kilometro != "") {
+           
+
+           $.ajax({
+               url: "@Url.Action("CalcularDistancias", "Mapa")",
+               type: "POST",
+               data: $('#model-datos-Persona').serialize(),
+               success: function (data) {
+                   $('#nombrePersona').val("");
+                   $('#marcaVehiculo').val("");
+                   $('#precioCombustible').val("");
+                   $('#kilometroGalon').val("");
+                   $('#myModal3').modal('toggle');
+                   alert(data.datos);
+               }
+           })
+
+
+            
+        } else {
+            alert("Campos Requeridos");
+        }
+
+    }
+
+    function soloNumeros(e) {
+        var key = window.event ? e.which : e.keyCode;
+        if (key < 48 || key > 57) {
+            e.preventDefault();
+        }
+    }
+
+
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNV78AyBSQCZj32afjnGyWVz-FMqxPq48&callback=myMap"></script>

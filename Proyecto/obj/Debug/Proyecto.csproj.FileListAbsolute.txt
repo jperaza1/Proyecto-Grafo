@@ -1,0 +1,194 @@
+D:\C++\Proyecto\Proyecto\bin\ApplicationInsights.config
+D:\C++\Proyecto\Proyecto\bin\roslyn\csc.exe
+D:\C++\Proyecto\Proyecto\bin\roslyn\csc.exe.config
+D:\C++\Proyecto\Proyecto\bin\roslyn\csc.rsp
+D:\C++\Proyecto\Proyecto\bin\roslyn\csi.exe
+D:\C++\Proyecto\Proyecto\bin\roslyn\csi.exe.config
+D:\C++\Proyecto\Proyecto\bin\roslyn\csi.rsp
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C++\Proyecto\Proyecto\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.AppContext.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Console.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Diagnostics.Process.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.IO.Compression.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.IO.FileSystem.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.IO.Pipes.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.AccessControl.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.Claims.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Security.Principal.Windows.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Threading.Thread.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.ValueTuple.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Xml.XmlDocument.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Xml.XPath.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\C++\Proyecto\Proyecto\bin\roslyn\vbc.exe
+D:\C++\Proyecto\Proyecto\bin\roslyn\vbc.exe.config
+D:\C++\Proyecto\Proyecto\bin\roslyn\vbc.rsp
+D:\C++\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+D:\C++\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+D:\C++\Proyecto\Proyecto\bin\Proyecto.dll
+D:\C++\Proyecto\Proyecto\bin\Proyecto.pdb
+D:\C++\Proyecto\Proyecto\bin\Antlr3.Runtime.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.Agent.Intercept.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.DependencyCollector.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.Web.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.WindowsServer.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.ApplicationInsights.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.Web.Infrastructure.dll
+D:\C++\Proyecto\Proyecto\bin\Newtonsoft.Json.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.Helpers.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.Mvc.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.Optimization.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.Razor.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.WebPages.Deployment.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.WebPages.dll
+D:\C++\Proyecto\Proyecto\bin\System.Web.WebPages.Razor.dll
+D:\C++\Proyecto\Proyecto\bin\WebGrease.dll
+D:\C++\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.Helpers.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.Mvc.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.Optimization.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.Razor.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.WebPages.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.WebPages.Deployment.xml
+D:\C++\Proyecto\Proyecto\bin\System.Web.WebPages.Razor.xml
+D:\C++\Proyecto\Proyecto\bin\Antlr3.Runtime.pdb
+D:\C++\Proyecto\Proyecto\bin\Newtonsoft.Json.xml
+D:\C++\Proyecto\Proyecto\bin\Microsoft.ApplicationInsights.xml
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.DependencyCollector.xml
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.WindowsServer.xml
+D:\C++\Proyecto\Proyecto\bin\Microsoft.AI.Web.xml
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.Helpers.resources.dll
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.Mvc.resources.dll
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.Optimization.resources.dll
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.Razor.resources.dll
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.WebPages.resources.dll
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\C++\Proyecto\Proyecto\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\C++\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+D:\C++\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+D:\C++\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+D:\C++\Proyecto\Proyecto\bin\Proyecto.dll.config
+D:\C++\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\ApplicationInsights.config
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\csc.exe.config
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\csc.rsp
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\csi.exe
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\csi.exe.config
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\csi.rsp
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.AppContext.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Console.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.IO.Compression.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.Claims.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.ValueTuple.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\vbc.exe.config
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\vbc.rsp
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Antlr3.Runtime.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.Web.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Newtonsoft.Json.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Helpers.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Mvc.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Optimization.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Razor.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.WebPages.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\WebGrease.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Helpers.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Mvc.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Optimization.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.Razor.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.WebPages.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Antlr3.Runtime.pdb
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Newtonsoft.Json.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\Microsoft.AI.Web.xml
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.Razor.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\Jose Peraza\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.pdb

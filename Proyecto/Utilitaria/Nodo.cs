@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using static Proyecto.Utilitaria.Diijkstra;
 
 namespace Proyecto.Utilitaria
 {
@@ -149,9 +150,9 @@ namespace Proyecto.Utilitaria
             {
                 if (a.referencia == -1)
                 {
-                    matriz[(a.id - 1), (0)] = a.valor;
+                    matriz[(a.id - 1), (0)] = 0;
                 }
-                else
+                else if(a.referencia > 0)
                 {
                     matriz[(a.referencia - 1), (a.id - 1)] = a.valor;
                 }
@@ -163,9 +164,39 @@ namespace Proyecto.Utilitaria
         }
 
 
-        public void CalcularDistancia(Persona perosna)
+        public string CalcularDistancia(Persona perosna)
         {
-            //Falta la parte mas yuca
+            int[,] matriz = (int[,])HttpContext.Current.Session["Verteci"];
+
+            List<ListaModels> lst = new List<ListaModels>();
+
+            if (HttpContext.Current.Session["Lista"] != null)
+            {
+                lst = (List<ListaModels>)HttpContext.Current.Session["Lista"];
+            }
+
+            int cantidad = lst.Count;
+
+            for (int i = 0; i< cantidad; i++)
+            {
+                for(int f = 0; f<cantidad; f++)
+                {
+                    if(matriz[i,f] == 0)
+                    {
+                        matriz[i, f] = -1;
+                    }
+                }
+            }
+
+
+            DijkstraClass prueba = new DijkstraClass((int)Math.Sqrt(matriz.Length), matriz);
+            prueba.CorrerDijkstra();
+            foreach(var a in prueba.D)
+            {
+
+            }
+
+            return "Ya Casi esta";
         }
 
     }

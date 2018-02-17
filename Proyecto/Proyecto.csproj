@@ -149,6 +149,7 @@
     </Compile>
     <Compile Include="Models\ListaModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilitaria\Diijkstra.cs" />
     <Compile Include="Utilitaria\Nodo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -18,7 +18,7 @@ namespace Proyecto.Utilitaria
             // arreglo de distancias
             private int trango = 0;
 
-            public DijkstraClass(int paramRango, int[,] paramArreglo)
+            public DijkstraClass(int paramRango, int[,] paramArreglo,int posicion)
             {
                 L = new int[paramRango, paramRango];
                 C = new int[paramRango];
@@ -42,7 +42,7 @@ namespace Proyecto.Utilitaria
                 C[0] = -1;
                 for (int i = 1; i < rango; i++)
                 {
-                    D[i] = L[0, i];
+                    D[i] = L[posicion, i];
                 }
 
             }

@@ -189,15 +189,37 @@ namespace Proyecto.Utilitaria
             }
 
 
-            DijkstraClass prueba = new DijkstraClass((int)Math.Sqrt(matriz.Length), matriz);
+            DijkstraClass prueba = new DijkstraClass((int)Math.Sqrt(matriz.Length), matriz,(perosna.idPosicionPartida-1));
             prueba.CorrerDijkstra();
+
+            string result = "";
+
+            int g = 1;
             foreach(var a in prueba.D)
             {
-
+                if(a > 0)
+                {
+                    result = result + "Distancia de " + obtenerNombreCiudad(lst, perosna.idPosicionPartida) + " a " + obtenerNombreCiudad(lst, g) + " es de " + a + " Km\n";
+                }
+                
+                g++;
             }
 
-            return "Ya Casi esta";
+            if (result == "")
+            {
+                result = "No hay rutas para este punto";
+            }
+            
+            return result;
         }
+
+
+        public string obtenerNombreCiudad(List<ListaModels> lst, int posicion)
+        {
+
+            return lst.Where(x => x.id == posicion).FirstOrDefault().nombreCiudad;
+        }
+
 
     }
 

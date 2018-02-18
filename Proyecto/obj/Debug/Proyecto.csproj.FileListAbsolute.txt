@@ -288,3 +288,4 @@ D:\Repocitorio\Estructura II\Proyecto I\Proyecto\bin\es\System.Web.WebPages.Razo
 D:\Repocitorio\Estructura II\Proyecto I\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
 D:\Repocitorio\Estructura II\Proyecto I\Proyecto\obj\Debug\Proyecto.dll
 D:\Repocitorio\Estructura II\Proyecto I\Proyecto\obj\Debug\Proyecto.pdb
+D:\Repocitorio\Estructura II\Proyecto I\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache

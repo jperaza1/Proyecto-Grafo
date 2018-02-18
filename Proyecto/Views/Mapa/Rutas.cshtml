@@ -3,7 +3,16 @@
 
     <br />
 
-    <h1>Grafos - Estructura de Datos I</h1>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>Grafos - Estructura de Datos I</h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <button class="btn btn-success" id="btnAgregarInte" onclick="MostrarIntercepcion()" disabled>Agregar Intercepcion</button>
+        </div>
+    </div>
+
+    
 
     <br />
 
@@ -103,6 +112,38 @@
                 </form>
             </div>
             <div id="footerModel-data" class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal4" role="dialog" style="height:650px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Agregar Intercepcion entre dos Puntos</h4>
+            </div>
+            <div class="modal-body">
+                <form id="model-datos-Intercepcion">
+                    <div class="form-group">
+                        <label>Desde</label>
+                        <select class="form-control" id="Desde" name="Desde"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Hasta</label>
+                        <select class="form-control" id="Hasta" name="Hasta"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Distancia</label>
+                        <input type="text" class="form-control" id="distancia" name="distancia" placeholder="Distancia entre los dos Puntos">
+                    </div>
+                    
+                </form>
+            </div>
+            <div id="footerModel-data-In" class="modal-footer">
 
             </div>
         </div>
@@ -238,6 +279,10 @@
                         lista = data;
                         listaAgregarCoordenadas();
 
+                        if (lista.length >= 2) {
+                            $('#btnAgregarInte').prop("disabled", false);
+                        }
+
                     }
                 })
         } else {
@@ -359,6 +404,29 @@
         if (key < 48 || key > 57) {
             e.preventDefault();
         }
+    }
+
+    function MostrarIntercepcion() {
+        $('#myModal4').modal({ keyboard: false });
+        $('#myModal4').modal('show');
+
+
+        $('#Desde').empty();
+        $('#Hasta').empty();
+
+        $.each(lista, function (i, item) {
+            $('#Desde').append($(
+                '<option value="' + item.id + '" readonly>' + item.nombreCiudad + '</option>'
+            ));
+            $('#Hasta').append($(
+                '<option value="' + item.id + '" readonly>' + item.nombreCiudad + '</option>'
+            ));
+        })
+
+        $('#footerModel-data-In').empty();
+        $('#footerModel-data-In').append($(
+            "<button type='button' onclick='AgregarArista()' class='btn btn-primary'>Agregar Intercepcion</button>"
+        ))
     }
 
 

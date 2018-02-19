@@ -151,6 +151,25 @@
 </div>
 
 
+<div class="modal fade" id="myModal5" role="dialog" style="height:650px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Las Mejores Rutas para su Presupuesto</h4>
+            </div>
+            <div class="modal-body">
+                <div id="Resultado"></div>
+            </div>
+            <div id="footerModel-data-In" class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
 
@@ -387,7 +406,29 @@
                    $('#precioCombustible').val("");
                    $('#kilometroGalon').val("");
                    $('#myModal3').modal('toggle');
-                   alert(data.datos);
+
+                   $('#myModal5').modal({ keyboard: false });
+                   $('#myModal5').modal('show');
+
+                   $('#Resultado').empty();
+
+                   $.each(data.encabezado, function (i, item) {
+                       $('#Resultado').append($(
+                           '<h3>' + item + '</h3>'
+                       ))
+                   })
+
+
+                   $('#Resultado').append($(
+                       '<h3> Rutas Disponibles para su Presupuesto </h3>'
+                   ))
+
+                   $.each(data.datos, function (i, item) {
+                       $('#Resultado').append($(
+                           '<h5>'+item+'</h5>'
+                       ))
+                   })
+
                }
            })
 
@@ -427,6 +468,42 @@
         $('#footerModel-data-In').append($(
             "<button type='button' onclick='AgregarArista()' class='btn btn-primary'>Agregar Intercepcion</button>"
         ))
+    }
+
+
+    function AgregarArista() {
+        var desde = $('#Desde option:selected').val();
+        var hasta = $('#Hasta option:selected').val();
+        var distancia = $('#Distancia').val();
+
+        if (desde == hasta) {
+            alert("No se puede usar la misma Ciudad");
+        } else if (distancia == "") {
+            alert("Ingrese una Distancia");
+        } else {
+            $.ajax({
+                url: "@Url.Action("Ayancente", "Mapa")",
+                type: "POST",
+                data: $('#model-datos-Intercepcion').serialize(),
+                success: function (data) {
+                    var Coordenadas = [];
+                    $.each(data.coordenadas, function (i, item) { // se hace el foreach desde ajax
+                        Coordenadas.push({
+                            lat: parseFloat(item.lat),
+                            lng: parseFloat(item.lng)
+                        });
+                    });
+
+                    agregarEnlacesMarker(Coordenadas);
+                    Tabla(data.ciudades);
+
+                    $('#myModal4').modal('toggle');
+
+                }
+            })
+        }
+
+
     }
 
 

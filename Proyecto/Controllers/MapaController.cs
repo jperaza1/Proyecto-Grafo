@@ -19,6 +19,7 @@ namespace Proyecto.Controllers
             {
                 Session["Lista"] = null;
                 Session["Verteci"] = null;
+                Session["Ady"] = null;
             }
 
 
@@ -44,9 +45,14 @@ namespace Proyecto.Controllers
             return Json(new { coordenadas = l.devolverListaCoordenadas(lista) , ciudades = l.getListaMarcadores() }, JsonRequestBehavior.AllowGet);
         }
 
+        public JsonResult Ayancente(Adyacente ady)
+        {
+            return Json(new { coordenadas = l.AgregarAdyacente(ady) , ciudades = l.getListaMarcadores() }, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult CalcularDistancias(Persona persona)
         {
-            return Json(new { datos = l.CalcularDistancia(persona) }, JsonRequestBehavior.AllowGet);
+            return Json(new { datos = l.CalcularDistancia(persona), encabezado = l.retornoCliente(persona) }, JsonRequestBehavior.AllowGet);
         }
 
     }

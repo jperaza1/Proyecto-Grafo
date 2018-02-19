@@ -34,4 +34,12 @@ namespace Proyecto.Models
         public double Presupuesto { get; set; }
     }
 
+    public class Adyacente
+    {
+        public int Desde { get; set; }
+        public int Hasta { get; set; }
+        public int distancia { get; set; }
+    }
+
+
 }
